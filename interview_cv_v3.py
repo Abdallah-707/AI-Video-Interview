@@ -94,6 +94,9 @@ class InterviewAnalyzer:
         self.debug = debug
         print("\n[INFO] Loading models...")
 
+        # --- LAZY IMPORT YOLO HERE ---
+        from ultralytics import YOLO
+
         mp_fm = mp.solutions.face_mesh
         mp_fd = mp.solutions.face_detection
         self.mp_draw        = mp.solutions.drawing_utils
@@ -177,6 +180,9 @@ class InterviewAnalyzer:
             return "Forward"
 
     def get_emotion(self, frame, face_bbox=None):
+        # --- LAZY IMPORT DEEPFACE HERE ---
+        from deepface import DeepFace
+
         try:
             H, W = frame.shape[:2]
             if face_bbox:
