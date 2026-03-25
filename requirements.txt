@@ -3,6 +3,7 @@ uvicorn
 python-multipart
 opencv-python-headless
 mediapipe
+tensorflow-cpu
 deepface
 ultralytics
 numpy
