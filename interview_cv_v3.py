@@ -15,7 +15,7 @@ INTERVIEW_DURATION   = 0      # 0 = unlimited
 EMOTION_EVERY_N_SEC  = 3
 YOLO_EVERY_N_FRAMES  = 10     # run YOLO every 10 frames
 YOLO_CONF            = 0.40   # lower = more sensitive (phone detection needs this)
-YOLO_MODEL           = "yolov8s.pt"  # s is better than n for small objects like phones
+YOLO_MODEL           = "yolov8n.pt"  # s is better than n for small objects like phones
 GAZE_THRESHOLD       = 0.38
 MULTI_FACE_LIMIT     = 1
 CONFIRM_RUNS_NEEDED  = 2
