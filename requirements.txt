@@ -4,6 +4,7 @@ python-multipart
 opencv-python-headless
 mediapipe
 tensorflow-cpu
+tf-keras
 deepface
 ultralytics
 numpy
